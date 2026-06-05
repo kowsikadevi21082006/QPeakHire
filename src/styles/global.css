@@ -1,5 +1,32 @@
 @import './variables.css';
 @import './animations.css';
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --ink: #0A0F1E;
+  --ink-mid: #2E3650;
+  --ink-soft: #6B7490;
+  --peak: #FF4D1C;
+  --peak-deep: #CC3610;
+  --peak-pale: #FFF0EC;
+  --cobalt: #1B3FFF;
+  --cobalt-pale: #EBF0FF;
+  --gold: #F5A800;
+  --green: #0DA882;
+  --green-pale: #F0FDF4;
+  --surface: #F5F6FA;
+  --bd: rgba(10,15,30,0.09);
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+
+h1, h2, h3, .stat-value {
+  font-family: 'Syne', sans-serif;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}

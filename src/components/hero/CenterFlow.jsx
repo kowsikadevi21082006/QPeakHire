@@ -38,7 +38,7 @@ export default function CenterFlow(){
         {/* moving data particles */}
         <div style={{ position:'absolute', left:8, top:28, display:'flex', gap:12, transform:'translateX(0)', width:200, overflow:'visible' }}>
           {[0,1,2].map(i=> (
-            <div key={i} style={{ width:8, height:8, borderRadius:8, background:'linear-gradient(90deg,#FF4D1C,#FF8060)', boxShadow:'0 6px 14px rgba(255,77,28,0.08)', opacity:0.95, animation:`streamMove ${5 + i*0.8}s linear infinite`, animationDelay:`${i*0.4}s`}} />
+            <div key={i} style={{ width:8, height:8, borderRadius:8, background:'linear-gradient(90deg,#1B3FFF,#0DA882)', boxShadow:'0 6px 14px rgba(27,63,255,0.06)', opacity:0.95, animation:`streamMove ${5 + i*0.8}s linear infinite`, animationDelay:`${i*0.4}s`}} />
           ))}
         </div>
 
@@ -62,7 +62,7 @@ export default function CenterFlow(){
           <div style={{ fontSize:11, color:'#6B7490', marginBottom:6 }}>AI Processing</div>
           <div style={{ fontSize:12, color:'#F5F6FA', fontWeight:700 }}>Analyzing Resume...</div>
           <div style={{ fontSize:12, color:'#6B7490', marginTop:6 }}>
-            <span style={{ display:'inline-block', width:8, height:8, borderRadius:8, background:'#FF4D1C', marginRight:8, animation:'nodePulse 2s infinite' }} /> Matching Skills...
+            <span style={{ display:'inline-block', width:8, height:8, borderRadius:8, background:'#1B3FFF', marginRight:8, animation:'nodePulse 2s infinite' }} /> Matching Skills...
           </div>
           <div style={{ fontSize:12, color:'#6B7490', marginTop:6 }}>
             <span style={{ display:'inline-block', width:8, height:8, borderRadius:8, background:'#1B3FFF', marginRight:8, animation:'nodePulse 2.4s infinite' }} /> Generating Tailored Resume...
@@ -75,7 +75,7 @@ export default function CenterFlow(){
           <div style={{ display:'flex', alignItems:'center', gap:8, justifyContent:'space-between' }}>
             {['Profile','Match','Tailor','Submit','Interview','Placed'].map((s,i)=> (
               <div key={s} style={{ display:'flex', flexDirection:'column', alignItems:'center', gap:6 }}>
-                <div style={{ width:10, height:10, borderRadius:10, background:i===2? '#FF4D1C':'rgba(245,246,250,0.06)', boxShadow: i===2? '0 8px 18px rgba(255,77,28,0.08)':'none' }} />
+                <div style={{ width:10, height:10, borderRadius:10, background:i===2? '#1B3FFF':'rgba(245,246,250,0.06)', boxShadow: i===2? '0 8px 18px rgba(27,63,255,0.06)':'none' }} />
                 <div style={{ fontSize:10, color:'#6B7490' }}>{s}</div>
               </div>
             ))}

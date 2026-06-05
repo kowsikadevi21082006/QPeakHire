@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import HeroBG from './HeroBG';
-import ProductVisuals from './ProductVisuals';
-import CenterFlow from './CenterFlow';
 
 export default function Hero() {
   const [typed, setTyped] = useState("");
@@ -34,7 +32,7 @@ export default function Hero() {
     }}>
       <HeroBG />
 
-      <div style={{ maxWidth: 780, position: 'relative', zIndex: 2 }}>
+      <div style={{ maxWidth: 920, position: 'relative', zIndex: 2 }}>
         <div className="fu" style={{ marginBottom: 20 }}>
           <span className="chip">
             <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#0DA882', animation: 'pulse 2s infinite', display: 'inline-block' }}/>
@@ -66,11 +64,7 @@ export default function Hero() {
           </span>
         </h2>
 
-        {/* Product visuals (non-intrusive, decorative UI snippets) */}
-        <ProductVisuals />
-
-        {/* Center flow visuals to connect product modules and fill middle area */}
-        <CenterFlow />
+        {/* Decorative background handled in HeroBG (clean, premium visuals) */}
 
         <p className="fu3" style={{
           fontSize: 18, lineHeight: 1.75,
