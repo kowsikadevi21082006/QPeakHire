@@ -1,0 +1,24 @@
+:root{
+  /* Color tokens from brand guidelines */
+  --ink: #0A0F1E; /* Midnight - base background / authority */
+  --ink-mid: #2E3650;
+  --ink-soft: #6B7490;
+  --peak: #FF4D1C; /* Peak Orange - primary CTA */
+  --peak-deep: #CC3610;
+  --peak-pale: #FFF0EC;
+  --cobalt: #1B3FFF; /* Hire Blue */
+  --cobalt-pale: #EBF0FF;
+  --gold: #F5A800; /* Alert / attention */
+  --placed: #0DA882; /* Success / placed */
+  --surface: #F5F6FA; /* Background surface for light elements */
+  --bd: rgba(10,15,30,0.09);
+
+  /* Layout tokens */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+
+  --space-unit: 4px;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px; --space-6: 24px; --space-7: 32px; --space-8: 40px;
+}

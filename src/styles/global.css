@@ -1,0 +1,27 @@
+@import './variables.css';
+@import './animations.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--surface);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+.sy{font-family:'Syne',sans-serif;}
+::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-track{background:var(--bg);}::-webkit-scrollbar-thumb{background:#2E3650;border-radius:2px;}
+
+.fu{animation:fadeUp 0.8s ease forwards;}.fu1{animation:fadeUp 0.8s 0.1s ease both;}.fu2{animation:fadeUp 0.8s 0.25s ease both;}.fu3{animation:fadeUp 0.8s 0.4s ease both;}.fi{animation:fadeIn 1s ease both;}
+
+.btn-p{background:var(--peak);color:#fff;border:none;padding:14px 32px;border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;letter-spacing:-0.2px;}
+.btn-p:hover{background:var(--peak-deep);transform:translateY(-2px);box-shadow:0 12px 32px rgba(255,77,28,0.4);}
+.btn-g{background:transparent;color:var(--surface);border:1px solid rgba(245,246,250,0.15);padding:14px 32px;border-radius:10px;font-family:'Inter',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:all 0.2s;display:inline-flex;align-items:center;gap:8px;}
+.btn-g:hover{background:rgba(245,246,250,0.06);border-color:rgba(245,246,250,0.3);}
+
+.nav-a{color:var(--ink-soft);text-decoration:none;font-size:14px;font-weight:500;transition:color 0.2s;cursor:pointer;}
+.nav-a:hover{color:var(--surface);} 
+
+.shimmer{background:linear-gradient(90deg,#F5F6FA 0%,#FF4D1C 40%,#F5F6FA 80%);background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;}
+.grad-text{background:linear-gradient(135deg,#FF4D1C 0%,#FF8060 45%,#1B3FFF 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+
+.chip{display:inline-flex;align-items:center;gap:6px;background:rgba(27,63,255,0.1);border:1px solid rgba(27,63,255,0.22);color:#7B9FFF;padding:5px 13px;border-radius:100px;font-size:11px;font-weight:600;letter-spacing:0.8px;text-transform:uppercase;}
+.lbl{display:inline-flex;align-items:center;gap:8px;color:#FF4D1C;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+
+.divider{width:100%;height:1px;background:rgba(245,246,250,0.06);}
